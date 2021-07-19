@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section id="title">
+    <div class="row">
+      <div class="col-lg-6">
+      <img class="top-img" src="images/math.jpg" alt="">
+      </div>
+      <div class="col-lg-6">
+      <p class="top-head">Here we are to save your time.Use this calculator and get the answer within fraction of time</p>
+      </div>
+  </div>
+    </section>
+    <section>
+      <div class="middle">
+    <table>
+      <tr>
+      <td colspan="3"><input class="dis" type="text" id="result"></td>
+      <td><input class="mybtn" type="button" value="C" onclick="Clr()"></td>
+      </tr>
+      <tr>
+        <td><input class="mybtn" type="button" value="1" onclick="display(1)" ></td>
+        <td><input class="mybtn" type="button" value="2" onclick="display(2)"></td>
+        <td><input class="mybtn" type="button" value="3" onclick="display(3)"></td>
+        <td><input class="mybtn" type="button" value="/" onclick="display('/')"></td>
+      </tr>
+      <tr>
+        <td><input class="mybtn" type="button" value="4" onclick="display(4)"></td>
+        <td><input class="mybtn" type="button" value="5" onclick="display(5)"></td>
+        <td><input class="mybtn" type="button" value="6" onclick="display(6)"></td>
+        <td><input class="mybtn" type="button" value="*" onclick="display('*')"></td>
+      </tr>
+      <tr>
+        <td><input class="mybtn" type="button" value="7" onclick="display(7)"></td>
+        <td><input class="mybtn" type="button" value="8" onclick="display(8)"></td>
+        <td><input class="mybtn" type="button" value="9" onclick="display(9)"></td>
+        <td><input class="mybtn" type="button" value="-" onclick="display('-')"></td>
+      </tr>
+      <tr>
+        <td><input class="mybtn" type="button" value="0" onclick="display(0)"></td>
+        <td><input class="mybtn" type="button" value="." onclick="display('.')"></td>
+        <td><input class="mybtn" type="button" value="=" onclick="equals()"></td>
+        <td><input class="mybtn" type="button" value="+" onclick="display('+')"></td>
+      </tr>
+    </table>
+</div>
+<div class="fun">
+<img class="cat"src="images/giphy.gif" alt="coder">
+<p class="cat-text">Do coding more and keep the datastructure along with calculation little bit simple</p>
+</div>
+</section>
+
+<section class="bottom">
+  <p>If you love to code and wanna know more about customized website then kindly feel free to convey</p>
+  <a class=" contact btn btn-outline-info"role="button"href="https://docs.google.com/forms/d/e/1FAIpQLSctevmT0VcTs4-CqDve7ft0rK6PulV2T1mMYxg8Qe5OyrEEVQ/viewform?usp=sf_link">Send Your FeedBack</a>
+  <h5 class="end">@copyright 2021_Ahana</h5>
+</section>
+    <script type="text/javascript">
+      function display(val){
+        document.getElementById('result').value+=val;
+      }
+      function Clr(){
+          document.getElementById('result').value="";
+
+      }
+      function equals(){
+        let x=document.getElementById('result').value;
+        let y = eval(x);
+        document.getElementById('result').value = y;
+      }
+    </script>
+  </body>
+</html>

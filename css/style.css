@@ -1,0 +1,73 @@
+#title{
+  padding:5%;
+  text-align: center;
+  background-color: #FCD8D4;
+}
+
+
+.top-img{
+  border-radius: 100%;
+  width:40%;
+}
+
+.top-head{
+  margin-right: 40%;
+  text-align: left;
+  color:#FF3D68;
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  letter-spacing: 1.5;
+}
+
+.middle{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 5% 8%;
+}
+
+.dis{
+  border:solid 2px;
+}
+
+.mybtn{
+  width:100%;
+  background-color: black;
+  color:#fff;
+}
+.fun{
+  background-color: #DF5E5E;
+  padding: 9% 9%;
+}
+.cat{
+  width:15%;
+  border-radius: 80%;
+  float:right;
+  margin-right: 20%;
+}
+.cat-text{
+  margin-left: 20%;
+  text-align: left;
+  font-family: "Ubuntu";
+  font-size: 1.5rem;
+  line-height: 2;
+}
+.bottom{
+  background-color:  #FCD8D4;
+  text-align: center;
+  padding: 5% 8%;
+  font-family: "Roboto";
+}
+.contact{
+  margin-bottom: 3%;
+}
+.end{
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+@media (max-width:1028px) {
+  .top-head{
+    text-align: center;
+    margin:0;
+  }
+}
